@@ -8,7 +8,6 @@ header ul {
   }
 
 
-@media (min-width: 650px) {
 header ul {
   list-style-type: none;
   display: flex;
@@ -48,4 +47,4 @@ footer ul {
     bottom: 0;
     z-index: -1;
     opacity: 0.4;
-    }}
+    }
