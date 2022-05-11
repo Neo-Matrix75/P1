@@ -291,3 +291,7 @@ img:hover {
 .player2 h1:hover {
   transform: translateX(-200px);
 }
+
+.tribute {
+  margin-left: 100px;
+}
