@@ -432,7 +432,11 @@
   .picRubber,
   .picPicot,
   .picBackside,
-  .picSoft
+  .picSoft,
+  .picPlayer1,
+  .picPlayer2,
+  .picPlayer3
+
    {
     border-radius: 30px;
     width: 350px;
@@ -443,7 +447,7 @@
     margin-top: 50px;
   }
 
-  /* Box du texte1 et texte3 de rule */
+  /* Box des textes de rules et effect */
   .text1,
   .text3,
   .text2,
@@ -472,7 +476,8 @@
   }
 
 .text4,
-.textBackside{
+.textBackside,
+.player3 {
   margin-bottom: 50px;
 }
   /*Bar de sépération  */
@@ -481,4 +486,14 @@
     margin-top: 50px;
     margin: 10px;
   }
+  .tribute {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    border: solid 1px;
+    border-radius: 10px;
+    width: 250px;
+  }
+
 }
