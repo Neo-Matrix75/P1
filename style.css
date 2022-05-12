@@ -112,7 +112,7 @@
     transform: scale(1.2);
   }
 
-  /* Box du texte1 et texte3 */
+  /* Box du texte1 et texte3 de rule */
   .text1,
   .text3 {
     width: 50vw;
@@ -129,7 +129,7 @@
     overflow: auto;
   }
 
-  /* Box du texte 2 */
+  /* Box du texte 2 de rule */
 
   .text2 {
     width: 50vw;
@@ -146,7 +146,7 @@
     overflow: auto;
   }
 
-  /* Box du texte 4 */
+  /* Box du texte 4 de rule*/
   .text4 {
     width: 50vw;
     height: 30vh;
@@ -344,6 +344,13 @@
     border-bottom: solid 2px;
   }
 
+  /* Agencement du contenu du footer */
+  .navFooter {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+  }
+
   /* Box du footer */
   .footer {
     position: fixed;
@@ -382,25 +389,96 @@
     opacity: 0.4;
   }
 
-  /* Agencement du contenu du footer */
-  .navFooter {
-    display: flex;
-    justify-content: space-evenly;
-    list-style: none;
-  }
-
   /* Titre des pages */
   .titleHome,
   .titleEffect,
   .titleRules,
   .titlePlayer,
-  .titleTribute {
+  .titleTribute,
+  .titleRubber {
     display: flex;
     justify-content: center;
     margin-top: 150px;
   }
-    /* Liens de toutes les pages */
-    a:link {
-      text-decoration: none;
-    }
+
+  /* Liens de toutes les pages */
+  a:link {
+    text-decoration: none;
+  }
+
+  /* Box de l'image de rules */
+  .containPic
+  {
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+  }
+
+  /* Box des images mobiles */
+  .rulePic
+   {
+    border-radius: 30px;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .picEffect1,
+  .picEffect2,
+  .picEffect3,
+  .picEffect4,
+  .picRubber,
+  .picPicot,
+  .picBackside,
+  .picSoft
+   {
+    border-radius: 30px;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+  }
+
+  /* Box du texte1 et texte3 de rule */
+  .text1,
+  .text3,
+  .text2,
+  .text4,
+  .textEffect1,
+  .textEffect2,
+  .textEffect3,
+  .textEffect4,
+  .textPicot,
+  .textSoft,
+  .textBackside {
+    width: 80vw;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    border: solid 5px;
+    box-shadow: 5px 5px;
+    border-radius: 10px;
+    overflow: auto;
+  }
+
+.text4,
+.textBackside{
+  margin-bottom: 50px;
+}
+  /*Bar de sépération  */
+  .bar {
+    border-top: solid 2px;
+    margin-top: 50px;
+    margin: 10px;
+  }
 }
