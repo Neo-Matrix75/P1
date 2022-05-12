@@ -5,293 +5,402 @@
   font-family: "Koulen", cursive;
 }
 
-/* Box de la boite nav */
-.nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: green;
-  text-decoration: none;
-  list-style-type: none;
-  height: 30px;
-  position: fixed;
-  width: 100vw;
-  top: 0;
-  z-index: 1;
-  border-bottom: solid 2px;
+/* SITE VERSION DESKTOP */
+@media (min-width: 600px) {
+
+  /* Box de la boite nav */
+  .nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: green;
+    text-decoration: none;
+    list-style-type: none;
+    height: 30px;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    z-index: 1;
+    border-bottom: solid 2px;
+  }
+
+  /* Paramètres de la vidéo mobile, caché en version desktop */
+  #mobile-video {
+    display: flex;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+    opacity: 0.4;
+  }
+
+  /* Box du footer */
+  .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    background-color: red;
+    border-top: solid 2px;
+  }
+
+  /* Agencement du contenu du footer */
+  .navFooter {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+  }
+
+  /* Titre des pages */
+  .titleHome,
+  .titleEffect,
+  .titleRules,
+  .titlePlayer,
+  .titleTribute {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+
+  /* Video de Home */
+  #background-video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+    opacity: 0.4;
+  }
+
+  /* Liens de toutes les pages */
+  a:link {
+    text-decoration: none;
+  }
+
+  /* Box de l'image de rules */
+  .containPic {
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+  }
+
+  /* Class de l'image de rules */
+  .rulePic {
+    border-radius: 30px;
+    width: 450px;
+  }
+
+  /* Propriètes générales des images du site */
+  img {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+  }
+
+  /* Proprièté du survol des images */
+  img:hover {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+  /* Box du texte1 et texte3 */
+  .text1,
+  .text3 {
+    width: 50vw;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    margin-top: 50px;
+    margin-left: 50px;
+    padding: 10px;
+    border: solid 5px;
+    box-shadow: 5px 5px;
+    border-radius: 10px;
+    overflow: auto;
+  }
+
+  /* Box du texte 2 */
+
+  .text2 {
+    width: 50vw;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    margin-top: 50px;
+    padding: 10px;
+    margin-left: 40vw;
+    border: solid 5px;
+    border-radius: 10px;
+    box-shadow: -5px 5px;
+    overflow: auto;
+  }
+
+  /* Box du texte 4 */
+  .text4 {
+    width: 50vw;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    padding: 10px;
+    margin-left: 40vw;
+    border: solid 5px;
+    border-radius: 10px;
+    box-shadow: -5px 5px;
+    overflow: auto;
+  }
+
+  /* Images de la page effet et revetement */
+  .picEffect1,
+  .picEffect3,
+  .picEffect2,
+  .picEffect4,
+  .picPicot,
+  .picSoft,
+  .picBackside {
+    width: 500px;
+    height: 300px;
+    border-radius: 30px;
+  }
+
+  /* Box effect1 et box effect3 */
+  .effect1,
+  .effect3,
+  .picot,
+  .backside {
+    margin-top: 10vh;
+    width: 500px;
+    margin-left: 5vw;
+  }
+
+  .textEffect1,
+  .textEffect3,
+  .textPicot,
+  .textBackside {
+    border: solid 5px;
+    border-radius: 20px;
+    box-shadow: 5px 5px;
+  }
+
+  /* Box effect2 */
+  .effect2,
+  .effect4,
+  .soft {
+    width: 500px;
+    margin-left: 50vw;
+    margin-top: -100px;
+  }
+
+  /* Texte de la boxeffect2 */
+  .textEffect2,
+  .textEffect4,
+  .textSoft {
+    border: solid 5px;
+    border-radius: 10px;
+    box-shadow: -5px 5px;
+  }
+
+  /* Box effect3 margin-top négatif */
+  .effect3,
+  .backside {
+    margin-top: -100px;
+  }
+
+  /* Padding box effect4 (bas de page) */
+  .textEffect4,
+  .textBackside {
+    margin-bottom: 100px;
+  }
+
+  /*Bar de sépération  */
+  .bar {
+    border-top: solid 5px;
+    margin-bottom: 200px;
+    margin: 50px;
+  }
+
+  .rubberPresentation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .titleRubber {
+    margin-bottom: 50px;
+  }
+
+  .picRubber {
+    border: solid 2px;
+    border-radius: 20px;
+  }
+
+  /* Images de la page player */
+
+  .picPlayer1,
+  .picPlayer2,
+  .picPlayer3,
+  .player1,
+  .player3 {
+    width: 500px;
+    height: 300px;
+    border-radius: 30px;
+  }
+
+  /* Propriétés des box des photos 1 et 3 */
+  .player1 {
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+    margin-top: 10vh;
+  }
+
+  .player3 {
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+  }
+
+  /* Propriétés de la box photo 2*/
+  .player2 {
+    display: flex;
+    flex-direction: column;
+    padding-right: 5vw;
+    align-items: flex-end;
+
+  }
+
+  /* Propriété de marge basse de la box photo3 */
+  .player3 {
+    padding-bottom: 100px;
+  }
+
+  /* Attributs du h1 des box player1 et player3 */
+  .player1 h1,
+  .player3 h1 {
+    color: red;
+    transition: transform 1s;
+  }
+
+  /* Translation des h1 des box player 1 et player3 */
+  .player1 h1:hover,
+  .player3 h1:hover {
+    transform: translateX(200px);
+  }
+
+  /*Attributs du h1 de la box photo2  */
+  .player2 h1 {
+    color: green;
+    transition: transform 1s;
+  }
+
+  /* Translation du h1 de la box 2 */
+  .player2 h1:hover {
+    transform: translateX(-200px);
+  }
+
+  .tribute {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    border: solid 1px;
+    border-radius: 10px;
+    width: 400px;
+  }
+
+  .tribute li {}
 }
 
-/* Box du footer */
-.footer {
-  position: fixed;
-  bottom: 0;
-  width: 100vw;
-  background-color: red;
-  border-top: solid 2px;
-}
+/* SITE VERSION MOBILE */
+@media (max-width: 600px) {
 
-/* Agencement du contenu du footer */
-.navFooter {
-  display: flex;
-  justify-content: space-evenly;
-  list-style: none;
-}
+  /* Box de la boite nav */
+  .nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: green;
+    text-decoration: none;
+    list-style-type: none;
+    height: 120px;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    z-index: 1;
+    border-bottom: solid 2px;
+  }
 
-/* Titre des pages */
-.titleHome,
-.titleEffect,
-.titleRules,
-.titlePlayer,
-.titleTribute {
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
-}
+  /* Box du footer */
+  .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    background-color: red;
+    border-top: solid 2px;
+  }
 
-/* Video de Home */
-#background-video {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  width: 100vw;
-  object-fit: cover;
-  position: fixed;
-  top: 0;
-  z-index: -1;
-  opacity: 0.4;
-}
+  /* Paramètres video desktop */
+  #background-video {
+    display: flex;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+    opacity: 0.4;
+  }
 
-/* Liens de toutes les pages */
-a:link {
-  text-decoration: none;
-}
+  /* Paramètre video mobile */
+  #mobile-video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+    opacity: 0.4;
+  }
 
-/* Box de l'image de rules */
-.containPic {
-  display: flex;
-  justify-content: center;
-  padding-top: 60px;
-}
+  /* Agencement du contenu du footer */
+  .navFooter {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+  }
 
-/* Class de l'image de rules */
-.rulePic {
-  border-radius: 30px;
-  width: 450px;
-}
-
-/* Propriètes générales des images du site */
-img {
-  -webkit-transform: scale(1);
-  transform: scale(1);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
-}
-
-/* Proprièté du survol des images */
-img:hover {
-  -webkit-transform: scale(1.2);
-  transform: scale(1.2);
-}
-
-/* Box du texte1 et texte3 */
-.text1,
-.text3 {
-  width: 50vw;
-  height: 30vh;
-  display: flex;
-  flex-direction: column;
-  text-align: justify;
-  margin-top: 50px;
-  margin-left: 50px;
-  padding: 10px;
-  border: solid 5px;
-  box-shadow: 5px 5px;
-  border-radius: 10px;
-  overflow: auto;
-}
-
-/* Box du texte 2 */
-
-.text2 {
-  width: 50vw;
-  height: 30vh;
-  display: flex;
-  flex-direction: column;
-  text-align: justify;
-  margin-top: 50px;
-  padding: 10px;
-  margin-left: 40vw;
-  border: solid 5px;
-  border-radius: 10px;
-  box-shadow: -5px 5px;
-  overflow: auto;
-}
-
-/* Box du texte 4 */
-.text4 {
-  width: 50vw;
-  height: 30vh;
-  display: flex;
-  flex-direction: column;
-  text-align: justify;
-  margin-top: 50px;
-  margin-bottom: 100px;
-  padding: 10px;
-  margin-left: 40vw;
-  border: solid 5px;
-  border-radius: 10px;
-  box-shadow: -5px 5px;
-  overflow: auto;
-}
-
-/* Images de la page effet et revetement */
-.picEffect1,
-.picEffect3,
-.picEffect2,
-.picEffect4,
-.picPicot,
-.picSoft,
-.picBackside {
-  width: 500px;
-  height: 300px;
-  border-radius: 30px;
-}
-
-/* Box effect1 et box effect3 */
-.effect1,
-.effect3,
-.picot,
-.backside {
-  margin-top: 10vh;
-  width: 500px;
-  margin-left: 5vw;
-}
-
-.textEffect1,
-.textEffect3,
-.textPicot,
-.textBackside {
-  border: solid 5px;
-  border-radius: 20px;
-  box-shadow: 5px 5px;
-}
-
-/* Box effect2 */
-.effect2,
-.effect4,
-.soft {
-  width: 500px;
-  margin-left: 50vw;
-  margin-top: -100px;
-}
-
-/* Texte de la boxeffect2 */
-.textEffect2,
-.textEffect4,
-.textSoft {
-  border: solid 5px;
-  border-radius: 10px;
-  box-shadow: -5px 5px;
-}
-
-/* Box effect3 margin-top négatif */
-.effect3,
-.backside {
-  margin-top: -100px;
-}
-
-/* Padding box effect4 (bas de page) */
-.textEffect4,
-.textBackside {
-  margin-bottom: 100px;
-}
-
-/*Bar de sépération  */
-.bar {
-  border-top: solid 5px;
-  margin-bottom: 200px;
-  margin: 50px;
-}
-
-.rubberPresentation {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.titleRubber {
-  margin-bottom: 50px;
-}
-
-.picRubber {
-  border: solid 2px;
-  border-radius: 20px;
-}
-
-/* Images de la page player */
-
-.picPlayer1,
-.picPlayer2,
-.picPlayer3,
-.player1,
-.player3 {
-  width: 500px;
-  height: 300px;
-  border-radius: 30px;
-}
-
-/* Propriétés des box des photos 1 et 3 */
-.player1 {
-  display: flex;
-  flex-direction: column;
-  padding-left: 100px;
-  margin-top: 10vh;
-}
-.player3 {
-  display: flex;
-  flex-direction: column;
-  padding-left: 100px;
-}
-
-/* Propriétés de la box photo 2*/
-.player2 {
-  display: flex;
-  flex-direction: column;
-  padding-right: 5vw;
-  align-items: flex-end;
-
-}
-
-/* Propriété de marge basse de la box photo3 */
-.player3 {
-  padding-bottom: 100px;
-}
-
-/* Attributs du h1 des box player1 et player3 */
-.player1 h1,
-.player3 h1 {
-  color: red;
-  transition: transform 1s;
-}
-
-/* Translation des h1 des box player 1 et player3 */
-.player1 h1:hover,
-.player3 h1:hover {
-  transform: translateX(200px);
-}
-
-/*Attributs du h1 de la box photo2  */
-.player2 h1 {
-  color: green;
-  transition: transform 1s;
-}
-
-/* Translation du h1 de la box 2 */
-.player2 h1:hover {
-  transform: translateX(-200px);
-}
-
-.tribute {
-  margin-left: 100px;
+  /* Titre des pages */
+  .titleHome,
+  .titleEffect,
+  .titleRules,
+  .titlePlayer,
+  .titleTribute {
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+  }
+    /* Liens de toutes les pages */
+    a:link {
+      text-decoration: none;
+    }
 }
