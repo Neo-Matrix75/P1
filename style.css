@@ -327,7 +327,9 @@
 
 /* SITE VERSION MOBILE */
 @media (max-width: 600px) {
-
+  .logo{
+    height:15px;
+  }
   /* Box de la boite nav */
   .nav {
     display: flex;
