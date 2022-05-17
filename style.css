@@ -104,14 +104,14 @@
   img {
     -webkit-transform: scale(1);
     transform: scale(1);
-    -webkit-transition: 0.3s ease-in-out;
-    transition: 0.3s ease-in-out;
+    -webkit-transition: 2s ease-in-out;
+    transition: 2s ease-in-out;
   }
 
   /* Proprièté du survol des images */
   img:hover {
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
+    -webkit-transform: scale(2);
+    transform: scale(2);
   }
 
   /* Box du texte1 et texte3 de rule */
